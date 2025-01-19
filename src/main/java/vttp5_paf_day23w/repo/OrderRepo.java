@@ -1,5 +1,6 @@
 package vttp5_paf_day23w.repo;
 
+import java.text.ParseException;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import vttp5_paf_day23w.model.Order;
 import vttp5_paf_day23w.utils.Queries;
+import vttp5_paf_day23w.utils.Utils;
 
 @Repository
 public class OrderRepo {
@@ -25,9 +27,10 @@ public class OrderRepo {
 
         }
 
-        Order o = Order.toOrder(rs); 
+        Order o = Utils.toOrder(rs);
         return Optional.of(o);
 
     }
+
     
 }
