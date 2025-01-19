@@ -1,12 +1,6 @@
 package vttp5_paf_day23w.model;
 
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.Date;
-
-import org.springframework.jdbc.support.rowset.SqlRowSet;
 
 public class Order {
 

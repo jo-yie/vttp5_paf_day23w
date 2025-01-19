@@ -8,6 +8,16 @@
 <body>
 
     <h1>form.html</h1>
+
+    <form method="GET"
+            th:action="@{/order/total{order_id}(order_id=${order_id})}">
+
+        <label for="order_id">Order Id: </label>
+        <input type="number" id="order_id" placeholder="Order Id" name="order_id">
+
+        <button type="submit">Submit</button>
+
+    </form>
     
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+</head>
+<body>
+
+    <h1>order-details.html</h1>
+
+    <p>
+        Order Id: <strong th:text="${order.orderId}"></strong>
+    </p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Order Id</td>
+                <td>Order Date</td>
+                <td>Customer Id</td>
+                <td>Total Price</td>
+                <td>Cost Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span th:text="${order.orderId}"></span></td>
+                <td><span th:text="${order.orderDate}"></span></td>
+                <td><span th:text="${order.customerId}"></span></td>
+                <td><span th:text="${order.totalPrice}"></span></td>
+                <td><span th:text="${order.costPrice}"></span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <a th:href="@{/form}">
+            Search Again
+        </a>
+    </p>
+    
+</body>
+</html>
